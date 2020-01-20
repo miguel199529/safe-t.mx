@@ -4,6 +4,14 @@
   }
 }
 
+
+/*desktop . */
+
+@media (min-width: 1170px) and (max-width: 1400px) {
+  .text-dec{
+    font-size: 53px !important;
+  }
+}
 /* Normal desktop :992px. */
 
 @media (min-width: 992px) and (max-width: 1169px) {
@@ -17,11 +25,35 @@
     font-size: 18px;
     line-height: 28px;
   }
+  .text-dec{
+    font-size: 45px !important;
+    line-height: 50px !important;
+  }
+  .quote .btn{
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    font-size: 12px !important;
+  }
 }
 
 /* Tablet desktop :768px. */
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .quote .btn{
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    font-size: 12px !important;
+  }
+  .text-dec{
+    font-size: 35px !important;
+    line-height: 40px !important;
+  }
+  .content-initial-btn{
+    margin-top: 5% !important;
+  }
+  .section-headline{
+    margin-right: 10%;
+  }
   .main-menu ul.navbar-nav li {
     display: inline-block;
     padding: 0 8px;
@@ -121,19 +153,19 @@
 @media (max-width: 767px) {
 
   .header-area {
-    height: 60px !important;
-    background: #000;
+    height: 70px !important;
+    background: #fff;
   }
   .navbar-header a.navbar-brand, .stick .navbar-header a.navbar-brand {
     display: inline-block;
-    height: 60px  !important;
+    height: 70px  !important;
     padding: 9px 0;
   }
   .navbar-default .navbar-toggle, .stick .navbar-default .navbar-toggle {
     padding: 15px 0;
   }
   .nav.navbar-nav.navbar-right, .stick .nav.navbar-nav.navbar-right {
-    background-color: #252525;
+    background-color: #fff;
     padding: 0;
     margin-top: 0;
   }
@@ -274,6 +306,65 @@
 /* Large Mobile :480px. */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+  .text-dec{
+    font-size: 23px !important;
+    line-height: 30px !important;
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+  }
+  .intro-para{
+    padding-left: 0% !important;
+  }
+  .quote .btn{
+    padding: 10px 15px !important;
+    margin-top: 0px !important;
+    margin-bottom: 10px;
+    font-size: 10px !important;
+  }
+  .content-initial-btn{
+    margin-top: 10% !important;
+  }
+  .about-ours {
+    font-size: 16px !important;
+  }
+  .section-headline-nosotros h2 {
+    font-size: 35px !important;
+    margin-bottom: 30px !important;
+  }
+  .about-marcas {
+    font-size: 16px !important;
+  }
+  .section-marcas h2 {
+    font-size: 38px !important;
+    margin-bottom: 30px !important;
+  }
+  .section-headline{
+    margin-right: 0%;
+  }
+  .section-headline.services-head>h4{
+    font-size: 16px !important;
+  }
+  .section-headline.services-head>h2{
+    font-size: 38px !important;
+    margin-bottom: 30px !important;
+  }
+  .section-headline.section-clients>h4 {
+    font-size: 16px !important;
+  }
+  .section-headline.section-clients>h2 {
+    font-size: 38px !important;
+    margin-bottom: 30px !important;
+  }
+  .section-headline.section-contact>h4{
+    font-size: 16px !important;
+  }
+  .section-headline.section-contact>h2 {
+    font-size: 38px !important;
+    margin-bottom: 30px !important;
+  }
+  .row-footer-area {
+    display: flex;
+  }  
   .submitbtn {
     float: none;
     width: 99.8%;
@@ -295,5 +386,109 @@
   }
   .tab-menu ul.nav li a {
     padding: 8px 20px;
+  }
+  .area-padding {
+    padding: 90px 0px 80px !important;
+  }
+  #slider1 .overview li {    
+    width: 230px !important;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  
+  .text-dec{
+    font-size: 15px !important;
+    line-height: 15px !important;
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+  }
+  .intro-para{
+    padding-left: 0% !important;
+  }
+  .quote .btn{
+    padding: 6px 10px !important;
+    margin-top: 0px !important;
+    margin-bottom: 9px;
+    font-size: 10px !important;
+  }
+  .mouse {
+    width: 20px !important;
+    height: 40px !important;
+  }
+  .area-padding {
+    padding: 70px 0px 80px !important;
+  }
+  .about-ours {
+    font-size: 14px !important;
+  }
+  .section-headline-nosotros h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+  .about-marcas {
+    font-size: 14px !important;
+  }
+  .section-marcas h2 {
+    font-size: 32px !important;
+    margin-bottom: 25px !important;
+  }
+  .section-headline{
+    margin-right: 0%;
+  }
+  .section-headline.services-head>h4{
+    font-size: 14px !important;
+  }
+  .section-headline.services-head>h2{
+    font-size: 32px !important;
+    margin-bottom: 25px !important;
+  }
+  .section-headline.section-clients>h4 {
+    font-size: 14px !important;
+  }
+  .section-headline.section-clients>h2 {
+    font-size: 32px !important;
+    margin-bottom: 25px !important;
+  }
+  .section-headline.section-contact>h4{
+    font-size: 14px !important;
+  }
+  .section-headline.section-contact>h2 {
+    font-size: 32px !important;
+    margin-bottom: 25px !important;
+  }
+  .row-footer-area {
+    display: block;
+  }  
+  .footer-head{
+    text-align: center;
+  }
+  .footer-content {
+    margin-bottom: 0px;
+  }
+  .text-camposObligatorios{
+    text-align: center !important;
+  }  
+  .btn-send-contact {
+    margin-top: 10%;
+    text-align: center !important;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 479px) {
+   .content-initial-btn{
+    margin-top: 10% !important;
+  }
+  #slider1 .overview li {    
+    width: 200px !important;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 399px) {
+  .content-initial-btn{
+   margin-top: 15% !important;
+ }
+ #slider1 .overview li {    
+  width: 150px !important;
   }
 }

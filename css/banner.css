@@ -1,0 +1,135 @@
+/***********************************
+Banner
+************************************/
+
+@font-face {
+    font-family: 'Criteria Cf Light';
+    src: url('./../lib/fuente/Criteria-CF-Light.otf');
+} 
+
+@font-face {
+    font-family: 'Criteria Cf Extra Bold';
+    src: url('./../lib/fuente/Criteria-CF-Extra-Bold.otf');
+} 
+
+.banner{
+    margin-top: 80px;
+    /*background: url('../img/banner/Ilustracion_Home.png') no-repeat left bottom 10%;*/
+    background-size: 40%;
+    /*height: 60%;*/
+    position: relative;
+}
+
+.bg-color{
+    background-color: transparent;
+	/*background-color: #fff;*/
+	min-height: 65%;
+}
+
+.content-initial{
+    margin-top: 8%;
+}
+
+.content-initial-btn{
+    margin-top: 2%;
+}
+
+.banner-container-img{
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+.text-dec{
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 15%;
+    font-size: 66px;
+    line-height: 60px;
+    font-family: 'Criteria Cf Extra Bold';
+    color: #131E29;
+}
+.text-border{
+	display: inline-block;
+}
+.intro-para{
+	font-family: 'Alegreya Sans', sans-serif;
+	font-size: 45px;
+	color: #131E29;
+	padding-left: 10%;
+    width: 50%
+}
+
+
+.quote .btn{
+    font-family: 'Criteria Cf Extra Bold';
+    border-radius: 10px;
+    padding: 20px 25px;
+    background-color: #fff;
+    color: #E03E25;
+    border-color: #E03E25;
+    border-style: solid;
+    border-width: 2px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+}
+.quote .btn:hover, .quote .btn:focus{
+    background-color: #E03E25;
+    color: #fff;
+    border-color: #E03E25;
+     -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.mouse {
+    width: 25px;
+    height: 45px;
+    border: 2px solid #FF717159;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -12.5px;
+    border-radius: 12px;
+}
+@-webkit-keyframes rotateplane {
+    0%   {top:10px;}
+    25%  {top:14px;}
+    50%  {top:19px;}
+    75%  {top:24px;}
+    100% {top:28px;}
+}
+@-moz-keyframes rotateplane {
+    0%   {top:10px;}
+    25%  {top:14px;}
+    50%  {top:19px;}
+    75%  {top:24px;}
+    100% {top:28px;}
+}
+@-o-keyframes rotateplane {
+    0%   {top:10px;}
+    25%  {top:14px;}
+    50%  {top:19px;}
+    75%  {top:24px;}
+    100% {top:28px;}
+}
+
+.mouse::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    background-color: #E03E25;
+    border-radius: 100%;
+    left: 50%;
+    top:10px;
+    margin-left: -2.5px;
+    transition:all 0.3s ease-in;
+
+    -webkit-animation-name: rotateplane; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+    animation-name: rotateplane;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}

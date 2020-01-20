@@ -1,0 +1,280 @@
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff url('./ajax-loader.gif') center center no-repeat;
+}
+
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('./fonts/slick.eot');
+    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+}
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 0;
+
+    display: block;
+
+    width:60px;
+    height: 60px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: #fff;
+    border-color: #ff717159;
+    border-style: solid;
+    border-radius: 50%;
+    outline: none;
+    background: #e03e52;
+}
+
+.slick-prev:hover,
+.slick-prev:focus
+{
+    content: url('./../../../img/servicios/chevron-up-red.png');
+    outline: none;
+    background: #fff;
+}
+
+.slick-next:hover,
+.slick-next:focus
+{
+    content: url('./../../../img/servicios/chevron-down-red.png');
+    outline: none;
+    background: #fff;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before{
+    content: url('./../../../img/servicios/chevron-up-red.png');
+    outline: none;
+    background: #fff;
+}
+
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    content: url('./../../../img/servicios/chevron-down-red.png');
+    outline: none;
+    background: #fff;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-size: 20px;
+    
+    opacity: .75;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+    top: 15%;
+    left: 47%;
+    z-index: 1;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -40px;
+    left: auto;
+}
+.slick-prev:before
+{
+    content: url('./../../../img/servicios/chevron-up-white.png');
+
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: url('./../../../img/servicios/chevron-down-white.png');
+}
+
+.slick-next
+{
+    top: 41%;
+    right: 47.8%;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -40px
+}
+.slick-next:before
+{
+    content: url('./../../../img/servicios/chevron-down-white.png');
+}
+[dir='rtl'] .slick-next:before
+{
+    content: url('./../../../img/servicios/chevron-up-white.png');
+}
+
+/* Dots */
+.slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    top: 60%;
+    position: absolute;
+
+    right: 49%;
+    padding: 0;
+    margin: 0;
+
+    list-style: circle;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-size: 28px;
+    line-height: 28px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: url('./../../../img/servicios/Indicador_Inactivo.png');  
+    text-align: center;
+
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    font-size: 28px;
+    line-height: 28px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: url('./../../../img/servicios/Indicador_Actual.png');
+    text-align: center;
+
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*********** responsive ***********************/
+@media (min-width: 992px) and (max-width: 1200px) {
+    .slick-prev {
+        top: 15%;
+        left: 46%;
+        z-index: 1;
+    }
+    .slick-next {
+        top: 45%;
+        right: 47.8%;
+    }
+    .slick-dots {
+        top: 60%;
+        position: absolute;
+        right: 49%;
+        padding: 0;
+        margin: 0;
+        list-style: circle;
+        text-align: center;
+    }
+  }
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .slick-prev {
+        top: 15%;
+        left: 46%;
+        z-index: 1;
+    }
+    .slick-next {
+        top: 45%;
+        right: 45.8%;
+    }
+    .slick-dots {
+        top: 60%;
+        position: absolute;
+        right: 48%;
+        padding: 0;
+        margin: 0;
+        list-style: circle;
+        text-align: center;
+    }
+    .slick-vertical .slick-slide {
+        height: 250px;
+    }
+}
