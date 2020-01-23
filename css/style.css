@@ -382,17 +382,74 @@ div#preloader {
 }
 
 .top-right.text-right li a {
-  color: #fff;
+  color: #E03E52;
 }
 
 .main-menu .dropdown ul {
-  background: #000;
+  background: #fff;
 }
 
 .main-menu .dropdown ul li {
   display: block;
+  padding: 12px 0px 1px 2px;
 }
 
+
+
+.navbar .nav li .dropdown-menu {
+  z-index: 2000;
+}
+
+.dropdown-menu .dropdown i {
+  position: absolute;
+  right: 0;
+  margin-top: 3px;
+  padding-left: 20px;
+}
+
+.navbar .nav>li>.dropdown-menu:before {
+  display: inline-block;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  border-bottom-color: none;
+  content: none;
+}
+
+.navbar .nav>li>.dropdown-menu:after {
+  display: inline-block;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  content: '';
+}
+
+ ul.dropdown-menu>li:hover {
+  background-color: #E03E5235;
+}
+
+ul.dropdown-menu>li.activo {
+  background-color: #E03E52;
+}
+
+.main-menu ul.navbar-nav li.active ul.dropdown-menu li.activo > a::after {
+  background: #E03E52;
+}
+
+
+ul.nav li.dropdown {
+  z-index: 1000;
+  display: block;
+}
+
+.navbar .nav>li>.dropdown-menu a {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  color: #707070;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 0px 1px 2px;
+  letter-spacing: 1px;
+}
 /*--------------------------------*/
 
 /* 2.1. Stick menu
@@ -552,6 +609,7 @@ div#preloader {
 }
 
 .service-box {
+  height: 45rem;
   box-shadow: 20px 16px 16px -5px #567E9725;
   background-color: #fff;
   padding: 2.5rem 4rem;
@@ -591,9 +649,9 @@ div#preloader {
   color: #131E29;
 }
 
-.service-content {
+/*.service-content {
   padding: 0px 10px 0px 10px;
-}
+}*/
 
 .ico-circle {
   height: 70px;
