@@ -8,8 +8,8 @@
     <meta content="" name="description" />
 
     <!-- Favicons -->
-    <link href="img/favicon.png" rel="icon" />
-    <link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="img/isotiporojo-01.png" rel="icon" />
+    <!-- <link href="img/apple-touch-icon.png" rel="apple-touch-icon" /> -->
 
     <!-- Google Fonts -->
     <link
@@ -84,24 +84,34 @@
                   </a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div
-                  class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1"
-                  id="navbar-example"
-                >
+                <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1"
+                  id="navbar-example">
                   <ul class="nav navbar-nav navbar-right mt-10">
-                    <li class="active">
+                    <li class="active dropdown">
                       <a class="page-scroll" href="#home">INICIO</a>
                     </li>
-                    <li>
+                    <li class="dropdown">
                       <a class="page-scroll" href="#about">NOSOTROS</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="page-scroll" href="#about">¿Quienes somos?</a></li>
+                        <li><a class="page-scroll" href="#marcas">Marcas</a></li>
+                      </ul>
                     </li>
-                    <li>
+                    <li class="dropdown">
                       <a class="page-scroll" href="#services">SERVICIOS</a>
+                      <ul class="dropdown-menu">
+                        <li class="page-scroll" data-filter=".todos">Todos</li>
+                        <li class="page-scroll" data-filter=".supresion">Sistemas y agentes de supresión</li>
+                        <li class="page-scroll" data-filter=".hidraulico">Sistemas hidráulicos</li>
+                        <li class="page-scroll" data-filter=".alarma">Sistemas de detección y alarmas</li>
+                        <li class="page-scroll" data-filter=".iluminacion">Iluminación</li>
+                        <li class="page-scroll" data-filter=".video">Video vigilancia</li>
+                      </ul>
                     </li>
-                    <li>
+                    <li class="dropdown">
                       <a class="page-scroll" href="#portfolio">CLIENTES</a>
                     </li>
-                    <li>
+                    <li class="dropdown">
                       <a class="page-scroll" href="#contact">CONTACTO</a>
                     </li>
                   </ul>
@@ -162,15 +172,34 @@
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="section-info text-center">
               <p>
-                Somos una empresa mexicana con más de 15 años de experiencia en la instalación de sistemas contra incendios, 
-                afiliados a la NFPA, nos mantenemos en constante capacitación y certificación para ofrecer a nuestros 
-                clientes la solución más precisa en materia de protección contra incendios.
+                
               </p>
             </div>
           </div>
         </div>
         <div class="row service-box-content">
           <!-- single-well start-->
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle">
+                  <img
+                    rel="icon"
+                    type="image/png"
+                    src="./img/icons/Logo_NFPA.png"
+                  />
+                </span>
+              </div>
+              <div class="service-content">
+                <h4 class="s-title">NFPA</h4>
+                <p class="s-description text-center">
+                  Somos una empresa mexicana con más de 15 años de experiencia en la instalación de sistemas contra incendios, 
+                afiliados a la NFPA, nos mantenemos en constante capacitación y certificación para ofrecer a nuestros 
+                clientes la solución más precisa en materia de protección contra incendios.
+                </p>
+              </div>
+            </div>
+          </div>
           <div class="col-md-4">
             <div class="service-box">
               <div class="service-ico">
@@ -198,7 +227,7 @@
                   <img
                     rel="icon"
                     type="image/png"
-                    src="./img/icons/Logo_NFPA.png"
+                    src="./img/icons/Icono_Beneficio.png"
                   />
                 </span>
               </div>
@@ -211,30 +240,11 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle">
-                  <img
-                    rel="icon"
-                    type="image/png"
-                    src="./img/icons/Icono_Beneficio.png"
-                  />
-                </span>
-              </div>
-              <div class="service-content">
-                <h4 class="s-title">Beneficio número tres</h4>
-                <p class="s-description text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                </p>
-              </div>
-            </div>
-          </div>
 
           <!-- End col-->
         </div>
 
-        <div class="row service-box-content mt-8-percent">
+        <div class="row service-box-content mt-8-percent" id="marcas">
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="section-marcas text-left">
               <h4 class="about-marcas">MARCAS</h4>
@@ -290,24 +300,23 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div class="awesome-menu ">
                 <ul class="project-menu">
-                  <li>
+                  <li id="todos">
                     <a href="#" class="active" data-filter=".todos">Todos</a>
                   </li>
-                  <li>
+                  <li id="hidraulico">
                     <a href="#" data-filter=".hidraulico">Sistemas hidráulicos</a>
                   </li>
-                  <li>
+                  <li id="supresion">
                     <a href="#" data-filter=".supresion">Sistemas y agentes de supresión</a>
                   </li>
-                  <li>
+                  <li id="alarma">
                     <a href="#" data-filter=".alarma">Sistemas de detección y alarmas</a>
                   </li>
-                  <li>
+                  <li id="iluminacion">
                     <a href="#" data-filter=".iluminacion">Iluminación</a>
                   </li>
-                  <li>
+                  <li id="video">
                     <a href="#" data-filter=".video">Video vigilancia</a>
-                  </li>
                   </li>
                 </ul>
               </div>
@@ -554,17 +563,17 @@
           </div>            
             <div class="viewport">
               <ul class="overview">
-                <li><img src="img/contacto/Elipse14.png"> Holiday Inn</li>
-                <li><img src="img/contacto/Elipse14.png"> Crowne Plaza</li>
-                <li><img src="img/contacto/Elipse14.png"> Pemex</li>
-                <li><img src="img/contacto/Elipse14.png"> CFE</li>
-                <li><img src="img/contacto/Elipse14.png"> Hilton</li>
-                <li><img src="img/contacto/Elipse14.png"> Marriot</li>
-                <li><img src="img/contacto/Elipse14.png"> Hotel Indigo</li>
-                <li><img src="img/contacto/Elipse14.png"> corporativo IHG Hyatt</li>
-                <li><img src="img/contacto/Elipse14.png"> Michelín</li>
-                <li><img src="img/contacto/Elipse14.png"> Ford</li>
-                <li><img src="img/contacto/Elipse14.png"> Mazda</li>
+                <li><img src="img/contacto/Elipse14.png"><img src="img/clientes/Logos-01.png"></li>
+                <li><img src="img/contacto/Elipse14.png"><img src="img/clientes/Logos-02.png"></li>
+                <li><img src="img/contacto/Elipse14.png"><img src="img/clientes/Logos-03.png"></li>
+                <li><img src="img/contacto/Elipse14.png"><img src="img/clientes/Logos-04.png"></li>
+                <li><img src="img/contacto/Elipse14.png"><img src="img/clientes/Logos-05.png"></li>
+                <li><img src="img/contacto/Elipse14.png"><img src="img/clientes/Logos-06.png"></li>
+                <li><img src="img/contacto/Elipse14.png"><img src="img/clientes/Logos-07.png"></li>
+                <li><img src="img/contacto/Elipse14.png"><img src="img/clientes/Logos-08.png"></li>
+                <li><img src="img/contacto/Elipse14.png"><img src="img/clientes/Logos-09.png"></li>
+                <li><img src="img/contacto/Elipse14.png"><img src="img/clientes/Logos-10.png"></li>
+                <li><img src="img/contacto/Elipse14.png"><img src="img/clientes/Logos-11.png"></li>
               </ul>
             </div>            
           </div>
@@ -726,7 +735,7 @@
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="copyright text-center">
-                <img src="img/footer/Made_ with_love_in_PACUECO.png">
+                <a href="http://www.pacueco.com/" target="_blank"><img src="img/footer/Made_ with_love_in_PACUECO.png"></a>
               </div>
               <div class="credits">               
                 &copy; <script type="text/javascript">
@@ -808,7 +817,23 @@
         });
 
       });
+
+
+      $(window).on("resize", function() { 
+
       
+        $('.vertical-center-todos')[0].slick.refresh();
+        $('.vertical-center-hidraulico')[0].slick.refresh();
+        $('.vertical-center-supresion')[0].slick.refresh();
+        $('.vertical-center-alarma')[0].slick.refresh();
+        $('.vertical-center-iluminacion')[0].slick.refresh();
+        $('.vertical-center-video')[0].slick.refresh();        
+
+        
+      });
+
+
+
     </script>
       <!-- /build -->
     <script>

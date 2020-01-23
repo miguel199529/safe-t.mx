@@ -51,6 +51,12 @@ $(document).ready(function() {
     $(".navbar-collapse.collapse").removeClass("in");
   });
 
+  $('ul.nav li.dropdown').hover(function() {
+    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn();
+  }, function() {
+    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut();
+  });
+
   //---------------------------------------------
   //Nivo slider
   //---------------------------------------------
@@ -203,11 +209,41 @@ $(document).ready(function() {
     });
   });
 
-  $(window).on("resize", function() { 
 
-    location.reload();
+  $(window).on("load", function() {
+    var dropdown_menu = $(".dropdown-menu li");
+    dropdown_menu.on("click", function(e) {
+      e.preventDefault();
+
+      $('body,html').stop(true,true).animate({				
+        scrollTop: $("#services").offset().top
+      },1000);
+
+      var dropdown_menu_active = $(".dropdown-menu>li.activo");
+
+      dropdown_menu_active.removeClass("activo");
+      $(this).addClass("activo");
     
+      var selector = $(this).attr("data-filter");
+      var $container = $(".content-slider-inner");
+      var pro_menu = $(".project-menu li a");
+      var pro_menu_active = $(".project-menu li a.active");
+      var selector_sin_punto = selector.replace('.', '#');
+      pro_menu_active.removeClass("active");
+      $(selector_sin_punto +" a").addClass("active");
+      //console.log(selector_sin_punto);
+      $container.isotope({
+      filter: selector,
+      animationOptions: {
+        duration: 750,
+        easing: "linear",
+        queue: false
+      }
+        });
+      return false;
+    });
   });
+ 
   //portfolio end
 
   /*---------------------
