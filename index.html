@@ -92,14 +92,14 @@
                     </li>
                     <li class="dropdown">
                       <a class="page-scroll" href="#about">NOSOTROS</a>
-                      <ul class="dropdown-menu">
+                      <ul class="dropdown-menu nosotros-submenu">
                         <li><a class="page-scroll" href="#about">¿Quienes somos?</a></li>
                         <li><a class="page-scroll" href="#marcas">Marcas</a></li>
                       </ul>
                     </li>
                     <li class="dropdown">
                       <a class="page-scroll" href="#services">SERVICIOS</a>
-                      <ul class="dropdown-menu">
+                      <ul class="dropdown-menu servicios-submenu">
                         <li class="page-scroll" data-filter=".todos">Todos</li>
                         <li class="page-scroll" data-filter=".supresion">Sistemas y agentes de supresión</li>
                         <li class="page-scroll" data-filter=".hidraulico">Sistemas hidráulicos</li>
@@ -113,6 +113,10 @@
                     </li>
                     <li class="dropdown">
                       <a class="page-scroll" href="#contact">CONTACTO</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="page-scroll dropdown-nfpa""><img src="img/icons/NFPA_Member.png" alt="" title=""/></a>
+                        
                     </li>
                   </ul>
                 </div>
@@ -139,6 +143,7 @@
                 <div class="banner-text ">
                   <div class="text-border text-initial">
                     <p class="text-dec">Sistemas y redes contra incendios</p>
+                    <p class="text-dec-construccion">En construcción...</p>
                   </div>
                   <div class="intro-para text-initial quote">
                     <a href="#footer" class="btn get-quote">CONTÁCTANOS</a>
@@ -164,7 +169,6 @@
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="section-headline-nosotros text-center">
               <h4 class="about-ours">NOSOTROS</h4>
-              <h2>¿Por qué elegirnos?</h2>
             </div>
           </div>
         </div>
@@ -193,7 +197,7 @@
               <div class="service-content">
                 <h4 class="s-title">NFPA</h4>
                 <p class="s-description text-center">
-                  Somos una empresa mexicana con más de 15 años de experiencia en la instalación de sistemas contra incendios, 
+                  Somos una empresa mexicana con más de 15 años de experiencia en la instalación de sistemas de seguridad, 
                 afiliados a la NFPA, nos mantenemos en constante capacitación y certificación para ofrecer a nuestros 
                 clientes la solución más precisa en materia de protección contra incendios.
                 </p>
@@ -214,7 +218,7 @@
               <div class="service-content">
                 <h4 class="s-title">Misión</h4>
                 <p class="s-description text-center">
-                  Satisfacer de la manera más efectiva las necesidades de protección contra incendio de nuestros clientes, 
+                  Satisfacer de la manera más efectiva las necesidades de seguridad (life safety) de nuestros clientes, 
                   proporcionando soluciones de excelencia con el mejor portafolio de productos y servicios.
                 </p>
               </div>
@@ -249,30 +253,24 @@
             <div class="section-marcas text-left">
               <h4 class="about-marcas">MARCAS</h4>
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-5">
                   <div class="section-marcas text-left">
                     <h2>Las mejores marcas</h2>
                     <p class="s-description text-left mb-10-percent">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Magni adipisci eaque autem fugiat! Quia, provident vitae!
-                      Magni tempora perferendis eum non provident.
+                      Somos distribuidores de las marcas mas importantes de sistemas de seguridad.
                     </p>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="row content-marcas">
-                    <div class="col-md-6 marca-item">
-                      <img src="./img/marcas/Logo_Honeywell.png" />
+                <div class="col-md-7">
+                  <div id="contenedor-slider" class="contenedor-slider">
+                    <div id="sliderPrueba" class="sliderPrueba">
+                      <section class="slider__section"><img src="img/marcas/Marcas_1.png" class="slider__img"></section>
+                      <section class="slider__section"><img src="img/marcas/Marcas_2.png" class="slider__img"></section>
+                      <section class="slider__section"><img src="img/marcas/Marcas_3.png" class="slider__img"></section>
+                      <section class="slider__section"><img src="img/marcas/Marcas 4.png" class="slider__img"></section>
                     </div>
-                    <div class="col-md-6 marca-item">
-                      <img src="./img/marcas/Logo_Firelite_Alarms.png" />
-                    </div>
-                    <div class="col-md-6 marca-item">
-                      <img src="./img/marcas/Logo_Simplex.png" />
-                    </div>
-                    <div class="col-md-6 marca-item">
-                      <img src="./img/marcas/Logo_Notifier.png" />
-                    </div>
+                    <div id="btn-prev-prueba" class="btn-prev-prueba">&#60;</div>
+                    <div id="btn-next-prueba" class="btn-next-prueba">&#62;</div>
                   </div>
                 </div>
               </div>
@@ -413,10 +411,9 @@
                   <div class="col-md-2 col-sm-2 col xs-1"></div>
                   <div class="col-md-5 col-sm-5 col xs-6 info-slide">  
                     <p>Sistemas hidráulicos</p>                  
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Culpa accusantium est dolorem! Quod, quos? Ratione, 
-                    itaque amet? Minima eveniet officiis doloremque eligendi 
-                    similique autem incidunt aliquid non vero corrupti! Cum.
+                    Diseñamos, suministramos e instalamos todo tipo de sistemas contra incendios,
+                    de acuerdo a las necesidades de cada proyecto, contamos con un área de 
+                    ingeniería con personal certificado en las normas NFPA.
                   </div> 
                 </div>                  
               </section>
@@ -429,12 +426,13 @@
                   <div class="col-md-2 col-sm-2 col xs-1"></div>
                   <div class="col-md-5 col-sm-5 col xs-6 info-slide">  
                     <p>Sistemas y agentes de supresión</p>                  
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Culpa accusantium est dolorem! Quod, quos? Ratione, 
-                    itaque amet? Minima eveniet officiis doloremque eligendi 
-                    similique autem incidunt aliquid non vero corrupti! Cum.
+                    Diseñamos, suministramos e instalamos todo tipo de sistemas de agentes limpios.
+                    Los agentes limpios son componentes gaseosos que sirven para combatir un fuego 
+                    por sofocación o rompimiento de la reacción en cadena de la combustión, este 
+                    componente no debe ser electricamente conductivo, ni dejar reciduos.
                   </div> 
                 </div>   
+
                 <div>
                     <div class="col-md-5 col-sm-5 col xs-5 img-slide">
                       <img src="img/servicios/003.jpg">
@@ -458,10 +456,12 @@
                   <div class="col-md-2 col-sm-2 col xs-1"></div>
                   <div class="col-md-5 col-sm-5 col xs-6 info-slide">
                     <p>Alarmas y estrobos</p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Culpa accusantium est dolorem! Quod, quos? Ratione, 
-                    itaque amet? Minima eveniet officiis doloremque eligendi 
-                    similique autem incidunt aliquid non vero corrupti! Cum.
+                    Diseñamos, suministramos e instalamos todo tipo de sistemas de detección de humos 
+                    y alarmas de acuerdo a las necesidades de cada proyecto. 
+                    Todos nuestros proyectos son diseñados bajo los estandares de NFPA, además en 
+                    nuestra plantilla de personal, tenemos un equipo técnico con amplia experiencia, 
+                    el cual se capacita constantemente, teniendo así la certeza que se está instalando 
+                    un sistema con las últimas actualizaciones.
                   </div>                  
                 </div>    
                 <div>
@@ -487,10 +487,11 @@
                   <div class="col-md-2 col-sm-2 col xs-1"></div>
                   <div class="col-md-5 col-sm-5 col xs-6 info-slide">
                     <p>Iluminación</p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Culpa accusantium est dolorem! Quod, quos? Ratione, 
-                    itaque amet? Minima eveniet officiis doloremque eligendi 
-                    similique autem incidunt aliquid non vero corrupti! Cum.
+                    Contamos con una amplia gama en soluciones de iluminación, ya sea industrial, 
+                    urbana y de interiores. <br>
+                    Todos nuestros productos cuentan con las calificaiones UL, ANCE y con la NOM, 
+                    esta es una solución más que agregamos a nuestro portafolio de productos 
+                    para robustecer y fortalecer la seguridad de nuestros clientes.
                   </div>                  
                 </div>   
               </section>
@@ -503,10 +504,11 @@
                   <div class="col-md-2 col-sm-2 col xs-1"></div>
                   <div class="col-md-5 col-sm-5 col xs-6 info-slide">
                     <p>Video vigilancia</p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Culpa accusantium est dolorem! Quod, quos? Ratione, 
-                    itaque amet? Minima eveniet officiis doloremque eligendi 
-                    similique autem incidunt aliquid non vero corrupti! Cum.
+                    Diseñamos, suministramos e instalamos todo tipo de circuitos cerrados de televisión (CCTV) 
+                    y entendemos las necesidades de protección de negocios, hogares, empresas, escuelas e 
+                    instituciones, por ello estamos comprometidos en brindarle sistemas confiables, de 
+                    altísima calidad y a precios accesibles, teniendo como resultado PROYECTOS DE SEGURIDAD 
+                    CONFIABLES.
                   </div>                  
                 </div>    
                 <div>
@@ -574,6 +576,8 @@
                 <li><img src="img/contacto/Elipse14.png"><img src="img/clientes/Logos-09.png"></li>
                 <li><img src="img/contacto/Elipse14.png"><img src="img/clientes/Logos-10.png"></li>
                 <li><img src="img/contacto/Elipse14.png"><img src="img/clientes/Logos-11.png"></li>
+                <li><img src="img/contacto/Elipse14.png"><img src="img/clientes/scotiabank.png"></li>
+                <li><img src="img/contacto/Elipse14.png"><img src="img/clientes/nhhoteles.png"></li>
               </ul>
             </div>            
           </div>
@@ -584,6 +588,7 @@
     </div>
 
     <!-- awesome-portfolio end -->
+    
 
     <!-- Start contact Area -->
     <div id="contact" class="contact-area">
@@ -689,9 +694,9 @@
                   <div class="footer-logo">
                     <img src="img/footer/Logo_negativo.png" alt=""/>
                   </div>
-                  <p class="footer-text-opac">hello@safet.com</p>
-                  <p class="footer-text-light">123 456 7890</p>
-                  <p class="footer-text-opac">AVISO DE PRIVACIDAD</p>                  
+                  <p class="footer-text-opac">direccion.safety@gmail.com</p>
+                  <p class="footer-text-light">4621058741</p>                 
+                  <p class="footer-text-opac cursor-default" data-toggle="modal" data-target="#exampleModalCenter">AVISO DE PRIVACIDAD</p>                  
                 </div>
               </div>
             </div>
@@ -699,10 +704,10 @@
             <div class="col-md-3 col-sm-3 col-xs-12 text-center">
               <div class="footer-content">
                 <div class="footer-head">
-                  <p class="footer-text-light">NOSOTROS</p>
-                  <p class="footer-text-light">SERVICIOS</p>
-                  <p class="footer-text-light">CLIENTES</p>
-                  <p class="footer-text-light">CONTACTO</p>
+                  <p><a class="footer-text-light" href="#about">NOSOTROS</a></p>
+                  <p><a class="footer-text-light" href="#services">SERVICIOS</a></p>
+                  <p><a class="footer-text-light" href="#portfolio">CLIENTES</a></p>
+                  <p><a class="footer-text-light" href="#contact">CONTACTO</a></p>
                 </div>
               </div>
             </div>
@@ -710,7 +715,7 @@
             <div class="col-md-3 col-sm-3 col-xs-12">
               <div class="footer-content">
                 <div class="footer-head">
-                    <div class="footer-icons text-center">
+                    <!--<div class="footer-icons text-center">
                       <ul>
                         <li>
                           <a href="#"><img src="img/footer/Icono_Facebook.png"/></a>
@@ -722,7 +727,7 @@
                           <a href="#"><img src="img/footer/Icono_Twitter.png"/></a>
                         </li>
                       </ul>
-                    </div>
+                    </div>-->
                   <p class="footer-text-opac">Villa Real 604, Quinta Villas, CP 36643, Irapuato, Gto</p>
                 </div>
               </div>
@@ -743,12 +748,39 @@
                 </script> copyright todos los derechos reservados
               </div>
             </div>
-          </div>
+          </div>          
         </div>
       </div>
     </footer>
 
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h5 class="modal-title aviso-de-privacidad" id="exampleModalLongTitle">Aviso de privacidad</h5>
+          </div>
+          <div class="modal-body privacidad-body">            
+            En cumplimiento con lo establecido por la Ley Federal de Protección de Datos Personales en Posesión de 
+            Particulares (en lo sucesivo “la Ley”), cuyas disposiciones claramente coadyuvan con nuestro objetivo de 
+            proteger sus datos personales, Safe-t S.A de C.V. (en lo sucesivo 
+            “la Empresa”) con domicilio en Villa Real 604, Quinta Villas, CP 36643, Irapuato 
+            Guanajuato, México, es el responsable del uso, protección y tratamiento de sus Datos Personales y hace 
+            de su conocimiento que los datos proporcionados por usted serán tratados de manera confidencial.
+
+            Dudas o aclaraciones al correo: direccion.safety@gmail.com
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-privacidad" data-dismiss="modal">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- JavaScript Libraries -->
     <script src="lib/jquery/jquery.min.js"></script>
@@ -772,8 +804,9 @@
     <script type="text/javascript" src="lib/jquery.tinycarousel.js"></script>
 
    <script src="lib/slick-master/slick/slick.js" type="text/javascript" charset="utf-8"></script>
-    <script type="text/javascript">
-      $(document).on('ready', function() {
+   <script type="text/javascript"></script>
+   <script type="text/javascript">
+     $(document).on('ready', function() {
         $(".vertical-center-todos").slick({
           dots: true,
           vertical: true,
@@ -821,7 +854,7 @@
 
       $(window).on("resize", function() { 
 
-      
+        console.log('aaaaaa');
         $('.vertical-center-todos')[0].slick.refresh();
         $('.vertical-center-hidraulico')[0].slick.refresh();
         $('.vertical-center-supresion')[0].slick.refresh();
@@ -831,8 +864,6 @@
 
         
       });
-
-
 
     </script>
       <!-- /build -->
@@ -863,8 +894,7 @@
           }
         }
 
-});
-
+      });
     </script>
   </body>
 </html>

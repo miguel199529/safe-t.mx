@@ -11,10 +11,17 @@
   .text-dec{
     font-size: 53px !important;
   }
+  .text-dec-construccion{
+    font-size: 20px !important;
+  }
   .service-box {
     height: 48rem;
     padding: 2.5rem 2rem;
   }
+
+  .content-initial-btn{
+    /*construccion*/ margin-top: 5% !important;
+ }
 }
 /* Normal desktop :992px. */
 
@@ -37,6 +44,12 @@
     font-size: 45px !important;
     line-height: 50px !important;
   }
+  .content-initial-btn{
+    /*construccion*/ margin-top: 5% !important;
+ }
+  .text-dec-construccion{
+    font-size: 20px !important;
+  }
   .quote .btn{
     padding: 15px 20px;
     margin-bottom: 20px;
@@ -45,8 +58,10 @@
 }
 
 /* Tablet desktop :768px. */
-
 @media (min-width: 768px) and (max-width: 991px) {
+  .navbar-right{
+    margin-right: -8% !important;
+  }
   .service-box {
     height: auto;
     padding: 2.5rem 5rem;
@@ -157,6 +172,9 @@
   }
   .search-option input {
     width: 67%;
+  }
+  .text-dec-construccion{
+    font-size: 20px !important;
   }
 }
 
@@ -316,6 +334,10 @@
   li.threaded-comments {
     margin-left: 0;
   }
+  #slider1 .overview li {    
+    width: 350px !important;
+  }
+ 
 }
 
 /* Large Mobile :480px. */
@@ -327,6 +349,12 @@
   }
   .text-dec{
     font-size: 23px !important;
+    line-height: 30px !important;
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+  }
+  .text-dec-construccion{
+    font-size: 15px !important;
     line-height: 30px !important;
     padding-left: 0% !important;
     padding-right: 0% !important;
@@ -409,10 +437,9 @@
   .area-padding {
     padding: 90px 0px 80px !important;
   }
-  #slider1 .overview li {    
-    width: 230px !important;
-  }
+
 }
+
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   .service-box {
@@ -421,6 +448,12 @@
   }
   .text-dec{
     font-size: 15px !important;
+    line-height: 15px !important;
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+  }
+  .text-dec-construccion{
+    font-size: 10px !important;
     line-height: 15px !important;
     padding-left: 0% !important;
     padding-right: 0% !important;
@@ -497,12 +530,20 @@
   }
 }
 
+
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+  #slider1 .overview li {    
+    width: 220px !important;
+  }
+}
+
+
 @media only screen and (min-width: 400px) and (max-width: 479px) {
    .content-initial-btn{
     margin-top: 10% !important;
   }
   #slider1 .overview li {    
-    width: 200px !important;
+    width: 195px !important;
   }
 }
 
@@ -511,6 +552,6 @@
    margin-top: 15% !important;
  }
  #slider1 .overview li {    
-  width: 150px !important;
+  width: 145px !important;
   }
 }

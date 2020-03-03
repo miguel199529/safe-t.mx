@@ -31,7 +31,7 @@ Banner
 }
 
 .content-initial-btn{
-    margin-top: 2%;
+   /*construccion*/ margin-top: 2%;
 }
 
 .banner-container-img{
@@ -45,6 +45,14 @@ Banner
     padding-right: 15%;
     font-size: 66px;
     line-height: 60px;
+    font-family: 'Criteria Cf Extra Bold';
+    color: #131E29;
+}
+
+.text-dec-construccion{
+    padding-left: 10%;
+    padding-right: 15%;
+    font-size: 30px;
     font-family: 'Criteria Cf Extra Bold';
     color: #131E29;
 }
