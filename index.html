@@ -31,6 +31,7 @@
 
     <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet" />
+    <link href="css/sliders.css" rel="stylesheet" />
 
     <!-- Responsive Stylesheet File -->
     <link href="css/responsive.css" rel="stylesheet" />
@@ -100,12 +101,12 @@
                     <li class="dropdown">
                       <a class="page-scroll" href="#services">SERVICIOS</a>
                       <ul class="dropdown-menu servicios-submenu">
-                        <li class="page-scroll" data-filter=".todos">Todos</li>
+                        <!--<li class="page-scroll" data-filter=".todos">Todos</li>-->
                         <li class="page-scroll" data-filter=".supresion">Sistemas y agentes de supresión</li>
                         <li class="page-scroll" data-filter=".hidraulico">Sistemas hidráulicos</li>
                         <li class="page-scroll" data-filter=".alarma">Sistemas de detección y alarmas</li>
-                        <li class="page-scroll" data-filter=".iluminacion">Iluminación</li>
-                        <li class="page-scroll" data-filter=".video">Video vigilancia</li>
+                        <!--<li class="page-scroll" data-filter=".iluminacion">Iluminación</li>-->
+                        <li class="page-scroll" data-filter=".video">Iluminación y Video vigilancia</li>
                       </ul>
                     </li>
                     <li class="dropdown">
@@ -136,17 +137,14 @@
       <div class="bg-color">
         <div class="container-fluid banner-container-img">
             <div class="row content-initial">
-              <div class="col-md-5 col-sm-5 col-xs-6">
-                <img src="img/banner/Ilustracion_Home.png"/>
-              </div>
-              <div class="col-md-7 col-sm-7 col-xs-6">
+              <div class="col-12">
                 <div class="banner-text ">
                   <div class="text-border text-initial">
                     <p class="text-dec">Sistemas y redes contra incendios</p>
-                    <p class="text-dec-construccion">En construcción...</p>
                   </div>
-                  <div class="intro-para text-initial quote">
-                    <a href="#footer" class="btn get-quote">CONTÁCTANOS</a>
+                  
+                  <div class="intro-para text-initial quote dropdown">
+                      <a class="page-scroll btn get-quote" href="#contact">CONTÁCTANOS</a>
                   </div>
                 </div>
               </div>
@@ -163,7 +161,8 @@
     
 
     <!-- Start About area -->
-    <div id="about" class="about-area area-padding">
+    <div id="about" class="about-area area-padding-3">
+      <div class="container-fluid">
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12">
@@ -247,8 +246,16 @@
 
           <!-- End col-->
         </div>
+      </div>
 
-        <div class="row service-box-content mt-8-percent" id="marcas">
+        <div class="row">
+          <div class="col-12 div-content-img-row ">
+            <img src="img/banner/02.jpg">
+          </div>
+        </div>
+
+      <div class="container">
+        <div class="row service-box-content mt-3-percent" id="marcas">
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="section-marcas text-left">
               <h4 class="about-marcas">MARCAS</h4>
@@ -278,11 +285,19 @@
           </div>
         </div>
       </div>
+
+      <div class="row">
+          <div class="col-12 div-content-img-row ">
+            <img src="img/banner/07.jpg">
+          </div>
+      </div>
+      </div>
     </div>
     <!-- End About area -->
 
     <!-- Start Service area -->
     <div id="services" class="services-area area-padding">
+
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12">
@@ -298,246 +313,149 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div class="awesome-menu ">
                 <ul class="project-menu">
-                  <li id="todos">
-                    <a href="#" class="active" data-filter=".todos">Todos</a>
-                  </li>
+                  <!--<li id="todos">
+                    <a href="#" id="todos-selected" class="active" data-filter=".todos">Todos</a>
+                  </li>-->
                   <li id="hidraulico">
-                    <a href="#" data-filter=".hidraulico">Sistemas hidráulicos</a>
+                    <a href="#" id="hidraulico-selected" class="active" data-filter=".hidraulico">Sistemas hidráulicos</a>
                   </li>
                   <li id="supresion">
-                    <a href="#" data-filter=".supresion">Sistemas y agentes de supresión</a>
+                    <a href="#" id="supresion-selected" data-filter=".supresion">Sistemas y agentes de supresión</a>
                   </li>
-                  <li id="alarma">
-                    <a href="#" data-filter=".alarma">Sistemas de detección y alarmas</a>
+                  <li id="alarma">                    
+                    <a href="#" id="alarma-selected" data-filter=".alarma">Sistemas de detección y alarmas</a>
                   </li>
-                  <li id="iluminacion">
-                    <a href="#" data-filter=".iluminacion">Iluminación</a>
-                  </li>
+                  <!--<li id="iluminacion">
+                    <a href="#" id="iluminacion-selected" data-filter=".iluminacion">Iluminación y Video vigilancia</a>
+                  </li>-->
                   <li id="video">
-                    <a href="#" data-filter=".video">Video vigilancia</a>
+                    <a href="#" id="video-selected" data-filter=".video">Iluminación y Video vigilancia</a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
           <div>
-            <div class="col-md-12 col-sm-12 col-xs-12 content-slider-inner">
-              <section class="vertical-center-todos slider todos">                
+            <div class="col-md-12 col-sm-12 col-xs-12 ">
+
+              <section class="vertical-center-supresion slider" id="content-supresion">
                 <div>
                   <div class="col-md-5 col-sm-5 col xs-5 img-slide">
-                    <img src="img/servicios/001.jpg">
+                    <img src="img/servicios/04.jpg">
                   </div>
                   <div class="col-md-2 col-sm-2 col xs-1"></div>
-                  <div class="col-md-5 col-sm-5 col xs-6 info-slide">
-                    <p>Lorem ipsum</p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Culpa accusantium est dolorem! Quod, quos? Ratione, 
-                    itaque amet? Minima eveniet officiis doloremque eligendi 
-                    similique autem incidunt aliquid non vero corrupti! Cum.
-                  </div> 
-                </div>
-                <div>
-                  <div class="col-md-5 col-sm-5 col xs-5 img-slide">
-                    <img src="img/servicios/002.jpg">
-                  </div>
-                  <div class="col-md-2 col-sm-2 col xs-1"></div>
-                  <div class="col-md-5 col-sm-5 col xs-6 info-slide">
-                    <p>Lorem ipsum</p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Culpa accusantium est dolorem! Quod, quos? Ratione, 
-                    itaque amet? Minima eveniet officiis doloremque eligendi 
-                    similique autem incidunt aliquid non vero corrupti! Cum.
-                  </div> 
-                </div>
-                <div>
+                  <div class="col-md-5 col-sm-5 col xs-6 info-slide" id="text-supresion"></div> 
+                </div>   
+
+                <!--<div>
                   <div class="col-md-5 col-sm-5 col xs-5 img-slide">
                     <img src="img/servicios/003.jpg">
                   </div>
                   <div class="col-md-2 col-sm-2 col xs-1"></div>
-                  <div class="col-md-5 col-sm-5 col xs-6 info-slide">
-                    <p>Lorem ipsum</p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Culpa accusantium est dolorem! Quod, quos? Ratione, 
-                    itaque amet? Minima eveniet officiis doloremque eligendi 
-                    similique autem incidunt aliquid non vero corrupti! Cum.
-                  </div> 
-                </div>
+                  <div class="col-md-5 col-sm-5 col xs-6 info-slide" id="text-supresion2"></div> 
+                </div>-->
+              </section>    
+               
+              <section class="slider vertical-center-alarma" id="content-alarma">
                 <div>
+                  <div class="col-md-5 col-sm-5 col xs-5 img-slide">
+                    <img src="img/servicios/05.jpg">
+                  </div>
+                  <div class="col-md-2 col-sm-2 col xs-1"></div>
+                  <div class="col-md-5 col-sm-5 col xs-6 info-slide" id="text-alarma"></div>                  
+                </div>
+                <!--<div>
                   <div class="col-md-5 col-sm-5 col xs-5 img-slide">
                     <img src="img/servicios/004.jpg">
                   </div>
                   <div class="col-md-2 col-sm-2 col xs-1"></div>
-                  <div class="col-md-5 col-sm-5 col xs-6 info-slide">
-                    <p>Lorem ipsum</p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Culpa accusantium est dolorem! Quod, quos? Ratione, 
-                    itaque amet? Minima eveniet officiis doloremque eligendi 
-                    similique autem incidunt aliquid non vero corrupti! Cum.
-                  </div> 
-                </div>
+                  <div class="col-md-5 col-sm-5 col xs-6 info-slide" id="text-alarma2"></div> 
+                </div>-->
+              </section> 
+
+              <section class="slider vertical-center-iluminacion" id="content-iluminacion">
                 <div>
                   <div class="col-md-5 col-sm-5 col xs-5 img-slide">
                     <img src="img/servicios/005.jpg">
                   </div>
                   <div class="col-md-2 col-sm-2 col xs-1"></div>
-                  <div class="col-md-5 col-sm-5 col xs-6 info-slide">
-                    <p>Lorem ipsum</p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Culpa accusantium est dolorem! Quod, quos? Ratione, 
-                    itaque amet? Minima eveniet officiis doloremque eligendi 
-                    similique autem incidunt aliquid non vero corrupti! Cum.
-                  </div> 
-                </div>
-                <div>
-                  <div class="col-md-5 col-sm-5 col xs-5 img-slide">
-                    <img src="img/servicios/006.jpg">
-                  </div>
-                  <div class="col-md-2 col-sm-2 col xs-1"></div>
-                  <div class="col-md-5 col-sm-5 col xs-6 info-slide">
-                    <p>Lorem ipsum</p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Culpa accusantium est dolorem! Quod, quos? Ratione, 
-                    itaque amet? Minima eveniet officiis doloremque eligendi 
-                    similique autem incidunt aliquid non vero corrupti! Cum.
-                  </div> 
-                </div>
+                  <div class="col-md-5 col-sm-5 col xs-6 info-slide" id="text-iluminacion"></div>                  
+                </div>     
               </section>
 
-              <section class="vertical-center-hidraulico slider hidraulico">
+
+              <section class="slider vertical-center-video" id="content-video">
                 <div>
                   <div class="col-md-5 col-sm-5 col xs-5 img-slide">
-                    <img src="img/servicios/003.jpg">
+                    <img src="img/servicios/08.jpg">
                   </div>
                   <div class="col-md-2 col-sm-2 col xs-1"></div>
-                  <div class="col-md-5 col-sm-5 col xs-6 info-slide">  
-                    <p>Sistemas hidráulicos</p>                  
-                    Diseñamos, suministramos e instalamos todo tipo de sistemas contra incendios,
-                    de acuerdo a las necesidades de cada proyecto, contamos con un área de 
-                    ingeniería con personal certificado en las normas NFPA.
-                  </div> 
-                </div>                  
-              </section>
-
-              <section class="vertical-center-supresion slider supresion">
-                <div>
-                  <div class="col-md-5 col-sm-5 col xs-5 img-slide">
-                    <img src="img/servicios/003.jpg">
-                  </div>
-                  <div class="col-md-2 col-sm-2 col xs-1"></div>
-                  <div class="col-md-5 col-sm-5 col xs-6 info-slide">  
-                    <p>Sistemas y agentes de supresión</p>                  
-                    Diseñamos, suministramos e instalamos todo tipo de sistemas de agentes limpios.
-                    Los agentes limpios son componentes gaseosos que sirven para combatir un fuego 
-                    por sofocación o rompimiento de la reacción en cadena de la combustión, este 
-                    componente no debe ser electricamente conductivo, ni dejar reciduos.
-                  </div> 
-                </div>   
-
-                <div>
-                    <div class="col-md-5 col-sm-5 col xs-5 img-slide">
-                      <img src="img/servicios/003.jpg">
-                    </div>
-                    <div class="col-md-2 col-sm-2 col xs-1"></div>
-                    <div class="col-md-5 col-sm-5 col xs-6 info-slide">  
-                      <p>Sistemas y agentes de supresión</p>                  
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                      Culpa accusantium est dolorem! Quod, quos? Ratione, 
-                      itaque amet? Minima eveniet officiis doloremque eligendi 
-                      similique autem incidunt aliquid non vero corrupti! Cum.
-                    </div> 
-                  </div>                
-              </section>
-
-              <section class="vertical-center-alarma slider alarma">
-                <div>
-                  <div class="col-md-5 col-sm-5 col xs-5 img-slide">
-                    <img src="img/servicios/001.jpg">
-                  </div>
-                  <div class="col-md-2 col-sm-2 col xs-1"></div>
-                  <div class="col-md-5 col-sm-5 col xs-6 info-slide">
-                    <p>Alarmas y estrobos</p>
-                    Diseñamos, suministramos e instalamos todo tipo de sistemas de detección de humos 
-                    y alarmas de acuerdo a las necesidades de cada proyecto. 
-                    Todos nuestros proyectos son diseñados bajo los estandares de NFPA, además en 
-                    nuestra plantilla de personal, tenemos un equipo técnico con amplia experiencia, 
-                    el cual se capacita constantemente, teniendo así la certeza que se está instalando 
-                    un sistema con las últimas actualizaciones.
-                  </div>                  
+                  <div class="col-md-5 col-sm-5 col xs-6 info-slide" id="text-video"></div>                  
                 </div>    
                 <div>
                   <div class="col-md-5 col-sm-5 col xs-5 img-slide">
-                    <img src="img/servicios/004.jpg">
+                    <img src="img/servicios/06.jpg">
                   </div>
                   <div class="col-md-2 col-sm-2 col xs-1"></div>
-                  <div class="col-md-5 col-sm-5 col xs-6 info-slide">
-                    <p>Alarmas y estrobos</p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Culpa accusantium est dolorem! Quod, quos? Ratione, 
-                    itaque amet? Minima eveniet officiis doloremque eligendi 
-                    similique autem incidunt aliquid non vero corrupti! Cum.
-                  </div> 
-                </div>       
-              </section>
-
-              <section class="vertical-center-iluminacion slider iluminacion">
-                <div>
-                  <div class="col-md-5 col-sm-5 col xs-5 img-slide">
-                    <img src="img/servicios/005.jpg">
-                  </div>
-                  <div class="col-md-2 col-sm-2 col xs-1"></div>
-                  <div class="col-md-5 col-sm-5 col xs-6 info-slide">
-                    <p>Iluminación</p>
-                    Contamos con una amplia gama en soluciones de iluminación, ya sea industrial, 
-                    urbana y de interiores. <br>
-                    Todos nuestros productos cuentan con las calificaiones UL, ANCE y con la NOM, 
-                    esta es una solución más que agregamos a nuestro portafolio de productos 
-                    para robustecer y fortalecer la seguridad de nuestros clientes.
-                  </div>                  
-                </div>   
-              </section>
-
-              <section class="vertical-center-video slider video">
-                <div>
-                  <div class="col-md-5 col-sm-5 col xs-5 img-slide">
-                    <img src="img/servicios/002.jpg">
-                  </div>
-                  <div class="col-md-2 col-sm-2 col xs-1"></div>
-                  <div class="col-md-5 col-sm-5 col xs-6 info-slide">
-                    <p>Video vigilancia</p>
-                    Diseñamos, suministramos e instalamos todo tipo de circuitos cerrados de televisión (CCTV) 
-                    y entendemos las necesidades de protección de negocios, hogares, empresas, escuelas e 
-                    instituciones, por ello estamos comprometidos en brindarle sistemas confiables, de 
-                    altísima calidad y a precios accesibles, teniendo como resultado PROYECTOS DE SEGURIDAD 
-                    CONFIABLES.
-                  </div>                  
-                </div>    
-                <div>
-                  <div class="col-md-5 col-sm-5 col xs-5 img-slide">
-                    <img src="img/servicios/005.jpg">
-                  </div>
-                  <div class="col-md-2 col-sm-2 col xs-1"></div>
-                  <div class="col-md-5 col-sm-5 col xs-6 info-slide">
-                    <p>Video vigilancia</p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Culpa accusantium est dolorem! Quod, quos? Ratione, 
-                    itaque amet? Minima eveniet officiis doloremque eligendi 
-                    similique autem incidunt aliquid non vero corrupti! Cum.
-                  </div> 
+                  <div class="col-md-5 col-sm-5 col xs-6 info-slide" id="text-video2"></div> 
                 </div> 
                 <div>
                   <div class="col-md-5 col-sm-5 col xs-5 img-slide">
+                    <img src="img/servicios/005.jpg">
+                  </div>
+                  <div class="col-md-2 col-sm-2 col xs-1"></div>
+                  <div class="col-md-5 col-sm-5 col xs-6 info-slide" id="text-video3"></div> 
+                </div>        
+              </section>
+
+              <section class="slider vertical-center-hidraulico" id="content-hidraulico">
+                <div>
+                  <div class="col-md-5 col-sm-5 col xs-5 img-slide">
+                    <img src="img/banner/01.jpg">
+                  </div>
+                  <div class="col-md-2 col-sm-2 col xs-1"></div>
+                  <div class="col-md-5 col-sm-5 col xs-6 info-slide" id="text-hidraulico"></div> 
+                </div>             
+              </section>
+
+              <section class="vertical-center-todos slider" id="content-todos">          
+                <div>
+                  <div class="col-md-5 col-sm-5 col xs-5 img-slide">
                     <img src="img/servicios/006.jpg">
                   </div>
                   <div class="col-md-2 col-sm-2 col xs-1"></div>
-                  <div class="col-md-5 col-sm-5 col xs-6 info-slide">
-                    <p>Video vigilancia</p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Culpa accusantium est dolorem! Quod, quos? Ratione, 
-                    itaque amet? Minima eveniet officiis doloremque eligendi 
-                    similique autem incidunt aliquid non vero corrupti! Cum.
-                  </div> 
-                </div>        
+                  <div class="col-md-5 col-sm-5 col xs-6 info-slide" id="text-videoTodos"></div> 
+                </div>      
+                <div>
+                  <div class="col-md-5 col-sm-5 col xs-5 img-slide">
+                    <img src="img/servicios/003.jpg">
+                  </div>
+                  <div class="col-md-2 col-sm-2 col xs-1"></div>
+                  <div class="col-md-5 col-sm-5 col xs-6 info-slide" id="text-hidraulicoTodos"></div> 
+                </div>
+                <div>
+                  <div class="col-md-5 col-sm-5 col xs-5 img-slide">
+                    <img src="img/servicios/002.jpg">
+                  </div>
+                  <div class="col-md-2 col-sm-2 col xs-1"></div>
+                  <div class="col-md-5 col-sm-5 col xs-6 info-slide" id="text-supresionTodos"></div> 
+                </div>
+                <div>
+                  <div class="col-md-5 col-sm-5 col xs-5 img-slide">
+                    <img src="img/servicios/001.jpg">
+                  </div>
+                  <div class="col-md-2 col-sm-2 col xs-1"></div>
+                  <div class="col-md-5 col-sm-5 col xs-6 info-slide" id="text-alarmaTodos"></div> 
+                </div>
+                <div>
+                  <div class="col-md-5 col-sm-5 col xs-5 img-slide">
+                    <img src="img/servicios/005.jpg">
+                  </div>
+                  <div class="col-md-2 col-sm-2 col xs-1"></div>
+                  <div class="col-md-5 col-sm-5 col xs-6 info-slide" id="text-iluminacionTodos"></div> 
+                </div>                
               </section>
+
             </div>          
           </div> 
         </div>
@@ -601,8 +519,7 @@
                 <h4>CONTACTO</h4>
                 <h2>¿Tienes alguna duda?</h2>
                 <p>
-                  Comunicate con nosotros a través de redes sociales o escríbenos mediante
-                  el siguiente formulario.
+                  Comunicate con nosotros escribiendonos mediante el siguiente formulario.
                 </p>
               </div>
             </div>
@@ -611,62 +528,73 @@
             <!-- Start  contact -->
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="form contact-form">
-                <div id="sendmessage">
-                  Your message has been sent. Thank you!
-                </div>
-                <div id="errormessage"></div>
                 <div class="row msg-row">
                   <div class="col-md-12 col-sm-12">
-                    <form action="" method="post" role="form" class="contactForm">
-                      <div id="sendmessage">Your booking request has been sent. Thank you!</div>
-                      <div id="errormessage"></div>
-                      <div class="col-md-4 col-sm-4 contact-form pad-form">
-                        <div class="form-group label-floating is-empty">
-                          <label>Nombre</label>
-                          <input type="text" name="name" class="form-control required" id="name" placeholder="*" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                          <div class="validation"></div>
-                        </div>
-          
-                      </div>
-                      <div class="col-md-1 col-sm-1"></div>
-                      <div class="col-md-7 col-sm-7 contact-form">
-                        <div class="form-group">
-                          <label>Asunto</label>
-                          <input type="text" class="form-control label-floating is-empty required" name="subject" id="subject" placeholder="*" data-rule="required" data-msg="This field is required" />
-                          <div class="validation"></div>
+                    <form action="" method="post" role="form" class="contactForm" id="idContactForm">
+                      <div class="progress" id="idProgress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                          aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                          <b>Enviando correo</b>
                         </div>
                       </div>
-                      <div class="col-md-4 col-sm-4">
-                        <div class="col-md-12 col-sm-12 contact-form padding-form">
+                      <div id="sendmessage">
+                        Tu mensaje ha sido enviado, ¡Gracias!
+                      </div>
+                      <div id="errormessage">
+                        Algo salio mal vuelve a intentarlo
+                      </div>
+                      <div class="row">
+                        <div class="col-md-4 col-sm-4 contact-form">
+                          <div class="form-group label-floating is-empty">
+                            <label>Nombre</label>
+                            <input type="text" name="name" class="form-control required" id="name" placeholder="*" data-rule="required" data-msg="Este campo es requerido" />
+                            <div class="validation"></div>
+                          </div>          
+                        </div>
+                        <div class="col-md-1 col-sm-1"></div>
+                        <div class="col-md-7 col-sm-7 contact-form padding-form">
                           <div class="form-group">
+                            <label>Asunto</label>
+                            <input type="text" class="form-control label-floating is-empty required" name="subject" id="subject" placeholder="*" data-rule="required" data-msg="Este campo es requerido" />
+                            <div class="validation"></div>
+                          </div>
+                        </div>
+                      </div>                     
+                      
+                      <div class="row">
+                        <div class="col-md-4 col-sm-4">
+                          <div class="col-md-12 col-sm-12 contact-form padding-form">
+                            <div class="form-group">
                               <label>Email</label>
-                            <input type="email" class="form-control label-floating is-empty required" name="email" id="email" placeholder="*" data-rule="email" data-msg="Please enter a valid email" />
+                              <input type="email" class="form-control label-floating is-empty required" name="email" id="email" placeholder="*" data-rule="email" data-msg="Por favor, introduce un correo válido" />
+                              <div class="validation"></div>
+                            </div>
+                          </div>  
+                          <div class="col-md-12 col-sm-12 contact-form padding-form">
+                            <div class="form-group">
+                              <label>Teléfono de contacto</label>
+                              <input type="number" class="form-control label-floating is-empty" name="phone" id="phone" placeholder="" data-rule="required" data-msg="Este campo es requerido" />
+                              <div class="validation"></div>
+                            </div>
+                          </div> 
+                        </div>
+                        <div class="col-md-1 col-sm-1"></div>
+                        <div class="col-md-7 col-sm-7 contact-form padding-form">
+                          <div class="form-group label-floating is-empty">
+                            <label>¿Cómo podemos ayudarte?</label>
+                            <textarea class="form-control" name="message" id="message" rows="5" rows="3" data-rule="required" data-msg="Por favor, escribe algo para nosotros" placeholder=""></textarea>
                             <div class="validation"></div>
-                          </div>
+                          </div>          
                         </div>  
-                        <div class="col-md-12 col-sm-12 contact-form padding-form">
-                          <div class="form-group">
-                            <label>Teléfono de contacto</label>
-                            <input type="number" class="form-control label-floating is-empty" name="phone" id="phone" placeholder="" data-rule="required" data-msg="This field is required" />
-                            <div class="validation"></div>
-                          </div>
-                        </div> 
                       </div>
-                      <div class="col-md-1 col-sm-1"></div>
-                      <div class="col-md-7 col-sm-7 contact-form">
-                        <div class="form-group label-floating is-empty">
-                          <label>¿Cómo podemos ayudarte?</label>
-                          <textarea class="form-control" name="message" rows="5" rows="3" data-rule="required" data-msg="Please write something for us" placeholder=""></textarea>
-                          <div class="validation"></div>
-                        </div>          
-                      </div>                                                 
-                      <div class="col-md-12 line-btn-contact">
+                                                                     
+                      <div class="row line-btn-contact">
                         <div class="col-md-6 col-sm-6 col-xs-12 padding-form text-camposObligatorios">
                           (<span>*</span>) Campos obligatorios
                         </div>
                         <div class="col-md-6 col-sm-6 col-xs-12 padding-form btn-send-contact">
                           <div class="quote-contact">
-                            <button type="submit" class="btn-contact">ENVIAR <img class="arrow-right" src="img/contacto/arrow-right.png" alt="send"/> </button>
+                            <button type="submit" class="btn-contact" >ENVIAR <img class="arrow-right" src="img/contacto/arrow-right.png" alt="send"/> </button>
                           </div>
                         </div>                        
                       </div>                                       
@@ -797,104 +725,14 @@
     <!-- Contact Form JavaScript File -->
     <script src="contactform/contactform.js"></script>
 
+    <script src="js/sliders.js"></script>
     <script src="js/main.js"></script>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
     <!-- build:js jquery.tinycarousel.js -->
     <script type="text/javascript" src="lib/jquery.tinycarousel.js"></script>
 
-   <script src="lib/slick-master/slick/slick.js" type="text/javascript" charset="utf-8"></script>
-   <script type="text/javascript"></script>
-   <script type="text/javascript">
-     $(document).on('ready', function() {
-        $(".vertical-center-todos").slick({
-          dots: true,
-          vertical: true,
-          centerMode: true,
-          mobileFirst:true,
-        });
+    <script src="lib/slick-master/slick/slick.js" type="text/javascript" charset="utf-8"></script>
 
-        $(".vertical-center-hidraulico").slick({
-          dots: true,
-          vertical: true,
-          centerMode: true,
-          mobileFirst:true,
-        });
-
-        $(".vertical-center-supresion").slick({
-          dots: true,
-          vertical: true,
-          centerMode: true,
-          mobileFirst:true,
-        });
-
-        $(".vertical-center-alarma").slick({
-          dots: true,
-          vertical: true,
-          centerMode: true,
-          mobileFirst:true,
-        });
-
-        $(".vertical-center-iluminacion").slick({
-          dots: true,
-          vertical: true,
-          centerMode: true,
-          mobileFirst:true,
-        });
-
-        $(".vertical-center-video").slick({
-          dots: true,
-          vertical: true,
-          centerMode: true,
-          mobileFirst:true,
-        });
-
-      });
-
-
-      $(window).on("resize", function() { 
-
-        console.log('aaaaaa');
-        $('.vertical-center-todos')[0].slick.refresh();
-        $('.vertical-center-hidraulico')[0].slick.refresh();
-        $('.vertical-center-supresion')[0].slick.refresh();
-        $('.vertical-center-alarma')[0].slick.refresh();
-        $('.vertical-center-iluminacion')[0].slick.refresh();
-        $('.vertical-center-video')[0].slick.refresh();        
-
-        
-      });
-
-    </script>
-      <!-- /build -->
-    <script>
-      $('.form').find('input, textarea').on('keyup blur focus', function (e) {
-  
-      var $this = $(this),
-          label = $this.prev('label');
-
-        if (e.type === 'keyup') {
-          if ($this.val() === '') {
-              label.removeClass('active');
-            } else {
-              label.addClass('active');
-            }
-        } else if (e.type === 'blur') {
-          if( $this.val() === '' ) {
-            label.removeClass('active'); 
-          } else {
-            label.removeClass('highlight');   
-          }   
-        } else if (e.type === 'focus') {          
-          if( $this.val() === '' ) {
-            label.removeClass('highlight'); 
-          } 
-          else if( $this.val() !== '' ) {
-            label.addClass('highlight');
-          }
-        }
-
-      });
-    </script>
   </body>
 </html>
