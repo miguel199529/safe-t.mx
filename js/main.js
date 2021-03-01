@@ -233,8 +233,10 @@ $(document).ready(function() {
       var pro_menu = $(".project-menu li a");
       var pro_menu_active = $(".project-menu li a.active");
       var selector_sin_punto = selector.replace('.', '#');
+      var simple_selector = selector.replace('.', '');
       pro_menu_active.removeClass("active");
       $(selector_sin_punto +" a").addClass("active");
+      fromMenuServices(simple_selector, event);
       //console.log(selector_sin_punto);
       $container.isotope({
       filter: selector,
@@ -306,36 +308,6 @@ $(document).ready(function() {
     });
   }
 
-  /* */
-
-  /* $('#todos').on('click', function (e) {
-   $('.content-slider-inner-todos').show();
-   $('.content-slider-inner-hidraulico').hide();
-   $('.content-slider-inner-supresion').hide();
-   $('.content-slider-inner-alarma').hide();
-  });
-
-  $('#hidraulico').on('click', function (e) {
-    $('.content-slider-inner-hidraulico').show();
-    $('.content-slider-inner-todos').hide();
-    $('.content-slider-inner-supresion').hide();
-    $('.content-slider-inner-alarma').hide();
-  });
-
-  $('#supresion').on('click', function (e) {
-    $('.content-slider-inner-supresion').show();
-    $('.content-slider-inner-todos').hide();
-    $('.content-slider-inner-hidraulico').hide();
-    $('.content-slider-inner-alarma').hide();
-  });
-
-  $('#alarma').on('click', function (e) {
-    $('.content-slider-inner-alarma').show();
-    $('.content-slider-inner-supresion').hide();
-    $('.content-slider-inner-todos').hide();
-    $('.content-slider-inner-hidraulico').hide();
-  });*/
-
   /*poner en rojo form*/
   $(".form")
     .find("input, textarea")
@@ -364,6 +336,7 @@ $(document).ready(function() {
       }
     });
 
+    
 
   //almacenar slider en una variable
 var slider = $('#sliderPrueba');

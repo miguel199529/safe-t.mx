@@ -1,0 +1,52 @@
+
+#content-supresion {
+    display:none;
+}  
+  
+#content-supresion.show{
+    display: block;
+}
+
+#content-alarma {
+    display:none;
+}  
+  
+#content-alarma.show{
+    display: block;
+}
+
+#content-iluminacion {
+    display:none;
+}  
+  
+#content-iluminacion.show{
+    display: block;
+}
+
+#content-video {
+    display:none;
+}  
+  
+#content-video.show{
+    display: block;
+}
+
+#content-hidraulico {
+    display:none;
+}  
+  
+#content-hidraulico.show{
+    display: block;
+}
+
+#content-todos {
+    display:none;
+}  
+  
+#content-todos.show{
+    display: block;
+}
+
+.txtSliders {
+    list-style: disc !important;
+}

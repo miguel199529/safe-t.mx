@@ -5,43 +5,50 @@ Banner
 @font-face {
     font-family: 'Criteria Cf Light';
     src: url('./../lib/fuente/Criteria-CF-Light.otf');
-} 
+}
 
 @font-face {
     font-family: 'Criteria Cf Extra Bold';
     src: url('./../lib/fuente/Criteria-CF-Extra-Bold.otf');
-} 
+}
 
-.banner{
+.banner {
     margin-top: 80px;
-    /*background: url('../img/banner/Ilustracion_Home.png') no-repeat left bottom 10%;*/
-    background-size: 40%;
+    background: url('../img/banner/01.jpg') no-repeat left bottom 10%;
+    background-size: cover;
     /*height: 60%;*/
     position: relative;
 }
 
-.bg-color{
+.banner-text {
+    text-align: center;
+}
+
+.bg-color {
     background-color: transparent;
-	/*background-color: #fff;*/
-	min-height: 65%;
+    /*background-color: #fff;*/
+    min-height: 65%;
 }
 
-.content-initial{
+.content-initial {
     margin-top: 8%;
+    height: 40vh;
+    max-height: 400px;
 }
 
-.content-initial-btn{
-   /*construccion*/ margin-top: 2%;
+.content-initial-btn {
+    /*construccion*/
+    margin-top: 2%;
 }
 
-.banner-container-img{
+.banner-container-img {
     padding-left: 0%;
     padding-right: 0%;
 }
 
-.text-dec{
+.text-dec {
     padding-top: 5%;
-    padding-left: 10%;
+    padding-left: 15%;
     padding-right: 15%;
     font-size: 66px;
     line-height: 60px;
@@ -49,26 +56,26 @@ Banner
     color: #131E29;
 }
 
-.text-dec-construccion{
+.text-dec-construccion {
     padding-left: 10%;
     padding-right: 15%;
     font-size: 30px;
     font-family: 'Criteria Cf Extra Bold';
     color: #131E29;
 }
-.text-border{
-	display: inline-block;
-}
-.intro-para{
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 45px;
-	color: #131E29;
-	padding-left: 10%;
-    width: 50%
+
+.text-border {
+    display: inline-block;
 }
 
+.intro-para {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 45px;
+    color: #131E29;
+    width: 100%
+}
 
-.quote .btn{
+.quote .btn {
     font-family: 'Criteria Cf Extra Bold';
     border-radius: 10px;
     padding: 20px 25px;
@@ -82,11 +89,13 @@ Banner
     transition: all 0.3s ease-in-out;
     margin-top: 10px;
 }
-.quote .btn:hover, .quote .btn:focus{
+
+.quote .btn:hover,
+.quote .btn:focus {
     background-color: #E03E25;
     color: #fff;
     border-color: #E03E25;
-     -webkit-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
@@ -101,26 +110,59 @@ Banner
     margin-left: -12.5px;
     border-radius: 12px;
 }
+
 @-webkit-keyframes rotateplane {
-    0%   {top:10px;}
-    25%  {top:14px;}
-    50%  {top:19px;}
-    75%  {top:24px;}
-    100% {top:28px;}
+    0% {
+        top: 10px;
+    }
+    25% {
+        top: 14px;
+    }
+    50% {
+        top: 19px;
+    }
+    75% {
+        top: 24px;
+    }
+    100% {
+        top: 28px;
+    }
 }
+
 @-moz-keyframes rotateplane {
-    0%   {top:10px;}
-    25%  {top:14px;}
-    50%  {top:19px;}
-    75%  {top:24px;}
-    100% {top:28px;}
+    0% {
+        top: 10px;
+    }
+    25% {
+        top: 14px;
+    }
+    50% {
+        top: 19px;
+    }
+    75% {
+        top: 24px;
+    }
+    100% {
+        top: 28px;
+    }
 }
+
 @-o-keyframes rotateplane {
-    0%   {top:10px;}
-    25%  {top:14px;}
-    50%  {top:19px;}
-    75%  {top:24px;}
-    100% {top:28px;}
+    0% {
+        top: 10px;
+    }
+    25% {
+        top: 14px;
+    }
+    50% {
+        top: 19px;
+    }
+    75% {
+        top: 24px;
+    }
+    100% {
+        top: 28px;
+    }
 }
 
 .mouse::after {
@@ -131,12 +173,13 @@ Banner
     background-color: #E03E25;
     border-radius: 100%;
     left: 50%;
-    top:10px;
+    top: 10px;
     margin-left: -2.5px;
-    transition:all 0.3s ease-in;
-
-    -webkit-animation-name: rotateplane; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+    transition: all 0.3s ease-in;
+    -webkit-animation-name: rotateplane;
+    /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 2s;
+    /* Chrome, Safari, Opera */
     animation-name: rotateplane;
     animation-duration: 2s;
     animation-iteration-count: infinite;
